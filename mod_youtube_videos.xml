@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" method="upgrade">
+    <name>Youtube Videos Player</name>
+    <author>Spinzsoft</author>
+    <creationDate>2018-05-05</creationDate>
+    <copyright>Copyright (C) 2018 - http://www.spinzsoft.com.</copyright>
+    <license>GPL 2.0</license>
+    <authorEmail>devaraj@spinzsoft.com</authorEmail>
+    <authorUrl>http://www.spinzsoft.com</authorUrl>
+    <version>1.0</version>
+    <description>
+        <![CDATA[<div><a title="" href="http://www.spinzsoft.com/" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.spinzsoft.com/img/spinzsoftlogo.png" alt=""/></a></div><h3>Thank You For Installing...</h3><div></div>]]>
+    </description>
+    <files>
+        <filename>mod_youtube_videos.xml</filename>
+        <filename module="mod_youtube_videos">mod_youtube_videos.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>tmpl/images/</folder>
+        <folder>tmpl/css/</folder>
+        <folder>tmpl/assets/</folder>
+    </files>
+    <updateservers>
+        <server type="extension" priority="1" name="Youtube Videos Player">http://www.spinzsoft.com/</server>
+    </updateservers>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+              <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix"/>
+                <field name="position" type="list" default="0" label="Position" description="">
+                    <option value="1">Left</option>
+                    <option value="0">Right</option>
+                </field>
+                <field name="margintop" type="text" default="10%" label="Margin top" description="Margin top"/>
+                <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Top Video&lt;/div&gt;"/>
+                <field name="facebook" type="list" default="1" label="Enable Top Video" description="Enable Top Video">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="profile_id" type="text" default="https://www.youtube.com/watch?v=W-kjZtbDvqc" label="Top Video" description="Page ID of the Facebook"/>
+                
+                <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Sub Videos&lt;/div&gt;"/>
+                <field name="twitter" type="list" default="1" label="Enable Sub Videos" description="Enable Sub Videos">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="twitter_login" type="textarea" default="https://www.youtube.com/watch?v=u5iy9vkBPlw,https://www.youtube.com/watch?v=G1OnRluCu8g" label="Sub Video's" description="Add Comma(,) B/W The Videos"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
