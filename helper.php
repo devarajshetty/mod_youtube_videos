@@ -4,7 +4,7 @@
  * @license    GNU/GPL http://www.gnu.org/copyleft/gpl.html
  * @link       https://jsns.eu
  */
-
+//first commit
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 class modSlideLikebox {
 	static function getLikebox( $params )   {
